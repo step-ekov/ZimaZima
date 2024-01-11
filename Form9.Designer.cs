@@ -231,9 +231,9 @@
             this.roundButton5.ButtonPressedColor2 = System.Drawing.Color.SteelBlue;
             this.roundButton5.ButtonPressedForeColor = System.Drawing.Color.SteelBlue;
             this.roundButton5.ButtonRoundRadius = 30;
-            this.roundButton5.Location = new System.Drawing.Point(778, 197);
+            this.roundButton5.Location = new System.Drawing.Point(778, 189);
             this.roundButton5.Name = "roundButton5";
-            this.roundButton5.Size = new System.Drawing.Size(211, 172);
+            this.roundButton5.Size = new System.Drawing.Size(211, 190);
             this.roundButton5.TabIndex = 21;
             // 
             // label2
@@ -241,18 +241,18 @@
             this.label2.BackColor = System.Drawing.Color.SteelBlue;
             this.label2.Image = global::test_2.Properties.Resources.icons8_капля_крови_50_photo_resizer_ru__2_;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label2.Location = new System.Drawing.Point(794, 197);
+            this.label2.Location = new System.Drawing.Point(780, 197);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 65);
+            this.label2.Size = new System.Drawing.Size(62, 65);
             this.label2.TabIndex = 22;
             // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.SteelBlue;
             this.label3.Image = global::test_2.Properties.Resources.icons8_воздух_50_photo_resizer_ru;
-            this.label3.Location = new System.Drawing.Point(791, 267);
+            this.label3.Location = new System.Drawing.Point(780, 267);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 99);
+            this.label3.Size = new System.Drawing.Size(66, 102);
             this.label3.TabIndex = 23;
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -261,9 +261,9 @@
             this.label4.BackColor = System.Drawing.Color.SteelBlue;
             this.label4.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(846, 197);
+            this.label4.Location = new System.Drawing.Point(846, 190);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 46);
+            this.label4.Size = new System.Drawing.Size(119, 54);
             this.label4.TabIndex = 24;
             this.label4.Text = "°t воды";
             this.label4.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -273,7 +273,7 @@
             this.label5.BackColor = System.Drawing.Color.SteelBlue;
             this.label5.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(851, 294);
+            this.label5.Location = new System.Drawing.Point(851, 295);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(114, 23);
             this.label5.TabIndex = 25;
@@ -299,7 +299,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(851, 317);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 52);
+            this.label7.Size = new System.Drawing.Size(114, 62);
             this.label7.TabIndex = 27;
             this.label7.Text = "29 -33 \'С";
             // 

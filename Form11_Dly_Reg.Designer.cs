@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label passwordLabel;
-            System.Windows.Forms.Label loginLabel;
-            System.Windows.Forms.Label nameLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form11_Dly_Reg));
+            System.Windows.Forms.Label nameLabel;
+            System.Windows.Forms.Label loginLabel;
+            System.Windows.Forms.Label passwordLabel;
             this.regestratBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.regestratBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -65,52 +65,18 @@
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.loginTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
-            passwordLabel = new System.Windows.Forms.Label();
-            loginLabel = new System.Windows.Forms.Label();
+            this.registratDataSet = new test_2.registratDataSet();
             nameLabel = new System.Windows.Forms.Label();
+            loginLabel = new System.Windows.Forms.Label();
+            passwordLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.regestratBindingNavigator)).BeginInit();
             this.regestratBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.regestratBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.designer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.regestratDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registratDataSet)).BeginInit();
             this.SuspendLayout();
-            // 
-            // passwordLabel
-            // 
-            passwordLabel.AutoSize = true;
-            passwordLabel.BackColor = System.Drawing.Color.Transparent;
-            passwordLabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            passwordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            passwordLabel.Location = new System.Drawing.Point(40, 203);
-            passwordLabel.Name = "passwordLabel";
-            passwordLabel.Size = new System.Drawing.Size(94, 18);
-            passwordLabel.TabIndex = 4;
-            passwordLabel.Text = "Password:";
-            // 
-            // loginLabel
-            // 
-            loginLabel.AutoSize = true;
-            loginLabel.BackColor = System.Drawing.Color.Transparent;
-            loginLabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            loginLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            loginLabel.Location = new System.Drawing.Point(40, 131);
-            loginLabel.Name = "loginLabel";
-            loginLabel.Size = new System.Drawing.Size(58, 18);
-            loginLabel.TabIndex = 2;
-            loginLabel.Text = "Login:";
-            // 
-            // nameLabel
-            // 
-            nameLabel.AutoSize = true;
-            nameLabel.BackColor = System.Drawing.Color.Transparent;
-            nameLabel.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            nameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            nameLabel.Location = new System.Drawing.Point(40, 279);
-            nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(65, 18);
-            nameLabel.TabIndex = 6;
-            nameLabel.Text = "Name:";
             // 
             // regestratBindingNavigator
             // 
@@ -156,6 +122,7 @@
             // 
             this.regestratBindingSource.DataMember = "Regestrat";
             this.regestratBindingSource.DataSource = this.dataSet1;
+            this.regestratBindingSource.CurrentChanged += new System.EventHandler(this.regestratBindingSource_CurrentChanged);
             // 
             // dataSet1
             // 
@@ -205,7 +172,6 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -281,7 +247,7 @@
             this.designer1.GradientDirection = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.designer1.Location = new System.Drawing.Point(0, 0);
             this.designer1.Name = "designer1";
-            this.designer1.Size = new System.Drawing.Size(324, 422);
+            this.designer1.Size = new System.Drawing.Size(697, 648);
             this.designer1.TabIndex = 11;
             // 
             // label5
@@ -290,17 +256,17 @@
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(59, 3);
+            this.label5.Location = new System.Drawing.Point(323, 247);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(25, 22);
+            this.label5.Size = new System.Drawing.Size(155, 96);
             this.label5.TabIndex = 24;
             this.label5.Visible = false;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(152, 3);
+            this.button5.Location = new System.Drawing.Point(460, 187);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(18, 23);
+            this.button5.Size = new System.Drawing.Size(73, 34);
             this.button5.TabIndex = 23;
             this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
@@ -309,9 +275,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(176, 3);
+            this.button1.Location = new System.Drawing.Point(515, 251);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(18, 22);
+            this.button1.Size = new System.Drawing.Size(62, 46);
             this.button1.TabIndex = 20;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -327,9 +293,9 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.regestratDataGridView.DataSource = this.regestratBindingSource;
-            this.regestratDataGridView.Location = new System.Drawing.Point(121, 3);
+            this.regestratDataGridView.Location = new System.Drawing.Point(336, 20);
             this.regestratDataGridView.Name = "regestratDataGridView";
-            this.regestratDataGridView.Size = new System.Drawing.Size(25, 22);
+            this.regestratDataGridView.Size = new System.Drawing.Size(241, 116);
             this.regestratDataGridView.TabIndex = 1;
             this.regestratDataGridView.Visible = false;
             this.regestratDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.regestratDataGridView_CellContentClick);
@@ -362,9 +328,9 @@
             // 
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(90, 3);
+            this.button4.Location = new System.Drawing.Point(323, 188);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(25, 22);
+            this.button4.Size = new System.Drawing.Size(84, 22);
             this.button4.TabIndex = 20;
             this.button4.Text = "Посмотреть\r\n";
             this.button4.UseVisualStyleBackColor = false;
@@ -439,6 +405,18 @@
             this.loginTextBox.TabIndex = 3;
             this.loginTextBox.TextChanged += new System.EventHandler(this.loginTextBox_TextChanged);
             // 
+            // nameLabel
+            // 
+            nameLabel.AutoSize = true;
+            nameLabel.BackColor = System.Drawing.Color.Transparent;
+            nameLabel.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            nameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            nameLabel.Location = new System.Drawing.Point(40, 279);
+            nameLabel.Name = "nameLabel";
+            nameLabel.Size = new System.Drawing.Size(65, 18);
+            nameLabel.TabIndex = 6;
+            nameLabel.Text = "Name:";
+            // 
             // nameTextBox
             // 
             this.nameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -451,11 +429,40 @@
             this.nameTextBox.TabIndex = 7;
             this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
             // 
+            // loginLabel
+            // 
+            loginLabel.AutoSize = true;
+            loginLabel.BackColor = System.Drawing.Color.Transparent;
+            loginLabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            loginLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            loginLabel.Location = new System.Drawing.Point(40, 131);
+            loginLabel.Name = "loginLabel";
+            loginLabel.Size = new System.Drawing.Size(58, 18);
+            loginLabel.TabIndex = 2;
+            loginLabel.Text = "Login:";
+            // 
+            // passwordLabel
+            // 
+            passwordLabel.AutoSize = true;
+            passwordLabel.BackColor = System.Drawing.Color.Transparent;
+            passwordLabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            passwordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            passwordLabel.Location = new System.Drawing.Point(40, 203);
+            passwordLabel.Name = "passwordLabel";
+            passwordLabel.Size = new System.Drawing.Size(94, 18);
+            passwordLabel.TabIndex = 4;
+            passwordLabel.Text = "Password:";
+            // 
+            // registratDataSet
+            // 
+            this.registratDataSet.DataSetName = "registratDataSet";
+            this.registratDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // Form11_Dly_Reg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(324, 422);
+            this.ClientSize = new System.Drawing.Size(697, 648);
             this.Controls.Add(this.regestratBindingNavigator);
             this.Controls.Add(this.designer1);
             this.Name = "Form11_Dly_Reg";
@@ -471,6 +478,7 @@
             this.designer1.ResumeLayout(false);
             this.designer1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.regestratDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registratDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -510,5 +518,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private registratDataSet registratDataSet;
     }
 }

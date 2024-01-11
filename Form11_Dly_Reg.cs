@@ -109,5 +109,10 @@ namespace test_2
         {
             label5.Text = "";
         }
+
+        private void regestratBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

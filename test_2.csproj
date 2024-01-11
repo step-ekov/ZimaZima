@@ -130,6 +130,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registratDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>registratDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RoundButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -204,6 +209,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="registratDataSet.xsc">
+      <DependentUpon>registratDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="registratDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>registratDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="registratDataSet.xss">
+      <DependentUpon>registratDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\image-BhhCuuKiu-transformed %281%29.png" />
   </ItemGroup>
   <ItemGroup>

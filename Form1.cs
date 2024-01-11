@@ -9,8 +9,9 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
-namespace test_2
+namespace test_2 //380; 398
 {
     public partial class Form1 : Form
     {
@@ -159,9 +160,63 @@ namespace test_2
                 MessageBox.Show("Err");
             }
 
+            //Запись имени
+            //int dl_name = dataGridView3.Rows.Count;
+            //int dl_1_name = dataGridView3.ColumnCount;
+            //string[] mass_name = new string[dl_name - 1];
+
+            //String s_name = "";
+
+            //for (int i_name = 0; i_name < dl_name - 1; i_name++)  //Копирование датагрида в текстбокс
+            //{
+            //    for (int j_name = 0; j_name < dl_1_name; j_name++) // если сделать -1 то будет только логин
+            //    {
+            //        s_name = dataGridView3.Rows[i_name].Cells[j_name].Value.ToString();
+            //    }
+            //    mass_name[i_name] += s_name.Replace(" ", "");
+            //    label9.Text += (s_name + "\r");
+            //}
+            //try
+            //{
+            //    int dl_name = dataGridView3.Rows.Count;
+            //    int dl_1_name = dataGridView3.ColumnCount;
+            //    string[] mass_name = new string[dl_name - 1];
+
+            //    String s_name = "";
+
+            //    for (int i_name = 0; i_name < dl_name - 1; i_name++)  //Копирование датагрида в текстбокс
+            //    {
+            //        for (int j_name = 0; j_name < dl_1_name; j_name++) // если сделать -1 то будет только логин
+            //        {
+            //            s_name = dataGridView3.Rows[i_name].Cells[j_name].Value.ToString();
+            //        }
+            //        mass_name[i_name] += s_name.Replace(" ", "");
+            //        label9.Text += (s_name + "\r");
+            //    }
+
+            //    foreach (string v in mass_name)
+            //    {
+            //        if (textBox1.Text == v)
+            //        {
+            //            flag_lg = 1;
+            //            index_lg = index_lg;
+            //            break;
+            //        }
+            //        else
+            //        {
+            //            flag_lg = 0;
+            //        }
+            //        label6.Text += (v + "\r");
+            //        index_lg++;
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Err");
+            //}
 
             //Конец проверки
-            if((textBox1.Text != "") && (textBox2.Text != ""))
+            if ((textBox1.Text != "") && (textBox2.Text != ""))
             {
                 if (((flag_lg != 0) && (flag_ps != 0)) && (index_lg == index_ps))
                 {
@@ -191,6 +246,7 @@ namespace test_2
 
         private void button4_Click(object sender, EventArgs e)
         {
+
         }
 
         public void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -222,6 +278,21 @@ namespace test_2
         }
 
         private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView3_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }

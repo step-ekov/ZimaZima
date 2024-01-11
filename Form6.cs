@@ -16,6 +16,7 @@ namespace test_2
     {
         public int flag_aktiv = 1;
         public string sum_shtraf;
+        public int balans;
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -65,7 +66,8 @@ namespace test_2
         private void roundButton4_Click(object sender, EventArgs e)
         {
             Form10 form10 = new Form10();
-            //Сделать Проверку на пустые поля try-catch
+            form10.money_shtraf = this.label7.Text;
+            form10.money = this.label2.Text;
             form10.textBox3.Text = "Балланс: " + this.label2.Text;
             form10.roundButton4_1.Text = "Оплатить\n" + this.label7.Text;
 
@@ -76,6 +78,7 @@ namespace test_2
         private void label2_Click(object sender, EventArgs e)
         {
             sum_shtraf = label2.Text;
+            balans = int.Parse(label2.Text);
         }
 
         private void label2_Click_1(object sender, EventArgs e)
@@ -87,8 +90,8 @@ namespace test_2
         private void roundButton5_Click(object sender, EventArgs e)
         {
             Form11 form11 = new Form11();
-            //Сделать Проверку на пустые поля try-catch
             form11.textBox1.Text = this.label2.Text;
+            form11.money = this.label2.Text;
             form11.ShowDialog();
             Hide();
         }
@@ -106,6 +109,13 @@ namespace test_2
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void roundButton7_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Show();
+            Hide();
         }
     }
 }

@@ -69,6 +69,8 @@ namespace test_2
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;// Display the date as "Mon 27 Feb 2012".  
+            dateTimePicker1.CustomFormat = "dd.MM.yyyy";
             data = dateTimePicker1.Text;
         }
 
@@ -79,28 +81,87 @@ namespace test_2
 
         private void roundButton1_Click(object sender, EventArgs e)
         {
-            //Проверка на заполненые поля
-            if ((FIO != "") & (login != "") & (data != "") & (time != ""))
+            Form6 form6 = new Form6();
+
+            if (form6.label19.Text == "")
             {
-                if(flag_iz_4frm == "1")
+                form6.label19.Visible = true;
+                //Проверка на заполненые поля
+                if ((FIO != "") & (login != "") & (data != "") & (time != ""))
                 {
-                    Form6 form6 = new Form6();
-                    form6.label19.Text = this.dateTimePicker1.Text + " ; " 
-                        + "Вид абонемента - Аквапарк" + " ; " + this.comboBox1.Text;
-                    form6.Show();
-                    Hide();
+                    if (flag_iz_4frm == "1")
+                    {
+                        //Form6 form6 = new Form6();
+                        form6.label19.Text = this.dateTimePicker1.Text + " ; "
+                            + "Вид абонемента - Аквапарк" + " ; " + this.comboBox1.Text;
+                        form6.Show();
+                        Hide();
+                    }
+                    else
+                    {
+                        //Form6 form6 = new Form6();
+                        form6.label19.Text = this.dateTimePicker1.Text + " ; "
+                            + "Вид абонемента - Аквапарк + СПА" + " ; " + this.comboBox1.Text;
+                        form6.Show();
+                        Hide();
+                    }
                 }
                 else
+                    MessageBox.Show("Главные поля не заполнены!!!");
+            }
+            else if (form6.label20.Text == "")
+            {
+                form6.label20.Visible = true;
+                //Проверка на заполненые поля
+                if ((FIO != "") & (login != "") & (data != "") & (time != ""))
                 {
-                    Form6 form6 = new Form6();
-                    form6.label19.Text = this.dateTimePicker1.Text + " ; " 
-                        + "Вид абонемента - Аквапарк + СПА" + " ; " + this.comboBox1.Text;
-                    form6.Show();
-                    Hide();
+                    if (flag_iz_4frm == "1")
+                    {
+                        //Form6 form6 = new Form6();
+                        form6.label20.Text = this.dateTimePicker1.Text + " ; "
+                            + "Вид абонемента - Аквапарк" + " ; " + this.comboBox1.Text;
+                        form6.Show();
+                        Hide();
+                    }
+                    else
+                    {
+                        //Form6 form6 = new Form6();
+                        form6.label20.Text = this.dateTimePicker1.Text + " ; "
+                            + "Вид абонемента - Аквапарк + СПА" + " ; " + this.comboBox1.Text;
+                        form6.Show();
+                        Hide();
+                    }
                 }
+                else
+                    MessageBox.Show("Главные поля не заполнены!!!");
             }
             else
-                MessageBox.Show("Главные поля не заполнены!!!");
+            {
+                form6.label16.Visible = true;
+                form6.label16.Text = "";
+                //Проверка на заполненые поля
+                if ((FIO != "") & (login != "") & (data != "") & (time != ""))
+                {
+                    if (flag_iz_4frm == "1")
+                    {
+                        //Form6 form6 = new Form6();
+                        form6.label16.Text = this.dateTimePicker1.Text + " ; "
+                            + "Вид абонемента - Аквапарк" + " ; " + this.comboBox1.Text;
+                        form6.Show();
+                        Hide();
+                    }
+                    else
+                    {
+                        //Form6 form6 = new Form6();
+                        form6.label16.Text = this.dateTimePicker1.Text + " ; "
+                            + "Вид абонемента - Аквапарк + СПА" + " ; " + this.comboBox1.Text;
+                        form6.Show();
+                        Hide();
+                    }
+                }
+                else
+                    MessageBox.Show("Главные поля не заполнены!!!");
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

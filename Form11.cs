@@ -13,7 +13,7 @@ namespace test_2
 {
     public partial class Form11 : Form
     {
-        int count_bt_1; int count_bt_2;
+        public string money; public string dly_rez = ""; public string rezu = "";
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -62,21 +62,24 @@ namespace test_2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            count_bt_1 = 1;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            count_bt_2 = 1;
+
         }
 
         private void roundButton5_Click(object sender, EventArgs e)
         {
             Form6 form6 = new Form6();
+            razbor();
 
-            if ((textBox1.Text != "") & (textBox2.Text != ""))
+            if ((textBox3.Text != "") & (textBox2.Text != ""))
             {
-                form6.label2.Text = this.textBox3.Text;
+                int uppMoney = int.Parse(textBox3.Text);
+                int rezMoney = uppMoney + int.Parse(rezu);
+                form6.label2.Text = rezMoney.ToString();
                 Close();
                 MessageBox.Show("Успешное пополнение!", "Уведомление");
                 form6.Show();
@@ -84,8 +87,19 @@ namespace test_2
             }
             else
                 MessageBox.Show("Поля пустые!", "Ошибка");
-           
-            //form6.label2.Text += int.Parse(form6.label2.Text + this.textBox3.Text);
+        }
+
+        public string razbor()
+        {
+            char[] a = money.ToCharArray();
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] != ' ')
+                    rezu += a[i];
+                else
+                    break;
+            }
+            return rezu;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

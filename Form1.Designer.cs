@@ -55,6 +55,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.loginDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loginDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.regestratBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.regestratBindingSource1)).BeginInit();
@@ -109,7 +115,7 @@
             this.designer1.Location = new System.Drawing.Point(0, 0);
             this.designer1.Name = "designer1";
             this.designer1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.designer1.Size = new System.Drawing.Size(364, 359);
+            this.designer1.Size = new System.Drawing.Size(886, 503);
             this.designer1.TabIndex = 1;
             this.designer1.Paint += new System.Windows.Forms.PaintEventHandler(this.designer1_Paint);
             // 
@@ -121,11 +127,10 @@
             this.loginDataGridViewTextBoxColumn1,
             this.passwordDataGridViewTextBoxColumn1});
             this.dataGridView2.DataSource = this.regestratBindingSource1;
-            this.dataGridView2.Location = new System.Drawing.Point(175, 3);
+            this.dataGridView2.Location = new System.Drawing.Point(629, 27);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(21, 16);
+            this.dataGridView2.Size = new System.Drawing.Size(245, 104);
             this.dataGridView2.TabIndex = 26;
-            this.dataGridView2.Visible = false;
             // 
             // loginDataGridViewTextBoxColumn1
             // 
@@ -145,11 +150,10 @@
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label8.Location = new System.Drawing.Point(251, 1);
+            this.label8.Location = new System.Drawing.Point(661, 325);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(21, 18);
+            this.label8.Size = new System.Drawing.Size(154, 126);
             this.label8.TabIndex = 25;
-            this.label8.Visible = false;
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
@@ -158,11 +162,10 @@
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(226, 3);
+            this.label7.Location = new System.Drawing.Point(492, 325);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(19, 16);
+            this.label7.Size = new System.Drawing.Size(143, 126);
             this.label7.TabIndex = 24;
-            this.label7.Visible = false;
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
@@ -171,22 +174,20 @@
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(202, 3);
+            this.label6.Location = new System.Drawing.Point(287, 335);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(18, 16);
+            this.label6.Size = new System.Drawing.Size(143, 116);
             this.label6.TabIndex = 23;
-            this.label6.Visible = false;
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(74, 3);
+            this.button5.Location = new System.Drawing.Point(492, 454);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(20, 16);
+            this.button5.Size = new System.Drawing.Size(76, 37);
             this.button5.TabIndex = 22;
             this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Visible = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label5
@@ -195,11 +196,10 @@
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(100, 3);
+            this.label5.Location = new System.Drawing.Point(116, 335);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(20, 16);
+            this.label5.Size = new System.Drawing.Size(143, 116);
             this.label5.TabIndex = 21;
-            this.label5.Visible = false;
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // dataGridView1
@@ -210,11 +210,10 @@
             this.loginDataGridViewTextBoxColumn,
             this.passwordDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.regestratBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(147, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(629, 198);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(22, 16);
+            this.dataGridView1.Size = new System.Drawing.Size(245, 95);
             this.dataGridView1.TabIndex = 20;
-            this.dataGridView1.Visible = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // loginDataGridViewTextBoxColumn
@@ -231,13 +230,12 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(126, 3);
+            this.button4.Location = new System.Drawing.Point(393, 454);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(15, 16);
+            this.button4.Size = new System.Drawing.Size(58, 37);
             this.button4.TabIndex = 19;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Visible = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
@@ -363,12 +361,48 @@
             this.label2.Text = "ZimaZima";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // loginDataGridViewTextBoxColumn2
+            // 
+            this.loginDataGridViewTextBoxColumn2.DataPropertyName = "Login";
+            this.loginDataGridViewTextBoxColumn2.HeaderText = "Login";
+            this.loginDataGridViewTextBoxColumn2.Name = "loginDataGridViewTextBoxColumn2";
+            // 
+            // passwordDataGridViewTextBoxColumn2
+            // 
+            this.passwordDataGridViewTextBoxColumn2.DataPropertyName = "Password";
+            this.passwordDataGridViewTextBoxColumn2.HeaderText = "Password";
+            this.passwordDataGridViewTextBoxColumn2.Name = "passwordDataGridViewTextBoxColumn2";
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // loginDataGridViewTextBoxColumn3
+            // 
+            this.loginDataGridViewTextBoxColumn3.DataPropertyName = "Login";
+            this.loginDataGridViewTextBoxColumn3.HeaderText = "Login";
+            this.loginDataGridViewTextBoxColumn3.Name = "loginDataGridViewTextBoxColumn3";
+            // 
+            // passwordDataGridViewTextBoxColumn3
+            // 
+            this.passwordDataGridViewTextBoxColumn3.DataPropertyName = "Password";
+            this.passwordDataGridViewTextBoxColumn3.HeaderText = "Password";
+            this.passwordDataGridViewTextBoxColumn3.Name = "passwordDataGridViewTextBoxColumn3";
+            // 
+            // nameDataGridViewTextBoxColumn1
+            // 
+            this.nameDataGridViewTextBoxColumn1.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn1.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(364, 359);
+            this.ClientSize = new System.Drawing.Size(886, 503);
             this.Controls.Add(this.designer1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -415,6 +449,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn loginDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn1;
         private System.Windows.Forms.BindingSource regestratBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loginDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loginDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
     }
 }
 

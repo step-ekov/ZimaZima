@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.designer1 = new test_2.designer();
+            this.label20 = new System.Windows.Forms.Label();
             this.roundButton1 = new test_2.RoundButton();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -55,6 +56,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.roundButton2 = new test_2.RoundButton();
+            this.roundButton7 = new test_2.RoundButton();
             this.designer1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +64,8 @@
             // 
             this.designer1.ColorFillFirst = System.Drawing.Color.White;
             this.designer1.ColorFillSecond = System.Drawing.Color.DodgerBlue;
+            this.designer1.Controls.Add(this.roundButton7);
+            this.designer1.Controls.Add(this.label20);
             this.designer1.Controls.Add(this.roundButton1);
             this.designer1.Controls.Add(this.label19);
             this.designer1.Controls.Add(this.label18);
@@ -95,6 +99,17 @@
             this.designer1.Size = new System.Drawing.Size(668, 665);
             this.designer1.TabIndex = 0;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label20.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label20.Location = new System.Drawing.Point(29, 533);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(0, 14);
+            this.label20.TabIndex = 42;
+            this.label20.Visible = false;
+            // 
             // roundButton1
             // 
             this.roundButton1.BackColor = System.Drawing.Color.Gainsboro;
@@ -118,11 +133,10 @@
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label19.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label19.Location = new System.Drawing.Point(35, 533);
+            this.label19.Location = new System.Drawing.Point(29, 508);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(57, 14);
+            this.label19.Size = new System.Drawing.Size(0, 14);
             this.label19.TabIndex = 41;
-            this.label19.Text = "label19";
             this.label19.Visible = false;
             this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
@@ -208,7 +222,7 @@
             this.roundButton5.ButtonPressedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.roundButton5.ButtonRoundRadius = 30;
             this.roundButton5.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roundButton5.Location = new System.Drawing.Point(510, 615);
+            this.roundButton5.Location = new System.Drawing.Point(435, 615);
             this.roundButton5.Name = "roundButton5";
             this.roundButton5.Size = new System.Drawing.Size(143, 38);
             this.roundButton5.TabIndex = 35;
@@ -321,7 +335,7 @@
             this.roundButton4.ButtonPressedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.roundButton4.ButtonRoundRadius = 30;
             this.roundButton4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roundButton4.Location = new System.Drawing.Point(16, 615);
+            this.roundButton4.Location = new System.Drawing.Point(85, 615);
             this.roundButton4.Name = "roundButton4";
             this.roundButton4.Size = new System.Drawing.Size(143, 38);
             this.roundButton4.TabIndex = 27;
@@ -335,7 +349,7 @@
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(101, 594);
+            this.label7.Location = new System.Drawing.Point(170, 594);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(51, 18);
             this.label7.TabIndex = 26;
@@ -349,7 +363,7 @@
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Verdana", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(17, 594);
+            this.label6.Location = new System.Drawing.Point(82, 594);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(86, 18);
             this.label6.TabIndex = 25;
@@ -465,6 +479,26 @@
             this.roundButton2.Size = new System.Drawing.Size(640, 154);
             this.roundButton2.TabIndex = 22;
             // 
+            // roundButton7
+            // 
+            this.roundButton7.BackColor = System.Drawing.Color.White;
+            this.roundButton7.BackColor2 = System.Drawing.Color.Transparent;
+            this.roundButton7.ButtonBorderColor = System.Drawing.Color.Silver;
+            this.roundButton7.ButtonHighlightColor = System.Drawing.Color.LightGray;
+            this.roundButton7.ButtonHighlightColor2 = System.Drawing.Color.LightGray;
+            this.roundButton7.ButtonHighlightForeColor = System.Drawing.Color.DodgerBlue;
+            this.roundButton7.ButtonPressedColor = System.Drawing.Color.Gainsboro;
+            this.roundButton7.ButtonPressedColor2 = System.Drawing.Color.Gainsboro;
+            this.roundButton7.ButtonPressedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.roundButton7.ButtonRoundRadius = 30;
+            this.roundButton7.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.roundButton7.Location = new System.Drawing.Point(260, 615);
+            this.roundButton7.Name = "roundButton7";
+            this.roundButton7.Size = new System.Drawing.Size(143, 38);
+            this.roundButton7.TabIndex = 43;
+            this.roundButton7.Text = "Купить абонемент";
+            this.roundButton7.Click += new System.EventHandler(this.roundButton7_Click);
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -502,7 +536,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label14;
         private RoundButton roundButton5;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private RoundButton roundButton6;
         private System.Windows.Forms.Label label18;
@@ -511,5 +544,8 @@
         public RoundButton roundButton4;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label label20;
+        public System.Windows.Forms.Label label16;
+        public RoundButton roundButton7;
     }
 }

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,8 +14,7 @@ namespace test_2
 {
     public partial class Form10 : Form
     {
-        int count_bt_1; int count_bt_2;
-        public string mony;
+        public string money; public string money_shtraf; public string rezu; public string rezu_1;
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -52,7 +52,7 @@ namespace test_2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            count_bt_1 = 1;
+
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -61,7 +61,7 @@ namespace test_2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            count_bt_2 = 1;
+
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -79,10 +79,14 @@ namespace test_2
         private void roundButton4_Click_1(object sender, EventArgs e)
         {
             Form6 form6 = new Form6();
+            razbor(); razbor1();
+            int rezul;
 
             if ((textBox1.Text != "") & (textBox2.Text != ""))
             {
                 form6.label7.Text = this.textBox4.Text;
+                rezul = int.Parse(rezu) - int.Parse(rezu_1);
+                form6.label2.Text = rezul.ToString();
                 Close();
                 MessageBox.Show("Успешная оплата", "Уведомление");
                 form6.Show();
@@ -90,6 +94,32 @@ namespace test_2
             }
             else
                 MessageBox.Show("Поля пустые!", "Ошибка");
+        }
+
+        public string razbor()
+        {
+            char[] a = money.ToCharArray();
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] != ' ')
+                    rezu += a[i];
+                else
+                    break;
+            }
+            return rezu;
+        }
+
+        public string razbor1()
+        {
+            char[] a = money_shtraf.ToCharArray();
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] != 'р')
+                    rezu_1 += a[i];
+                else
+                    break;
+            }
+            return rezu_1;
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
